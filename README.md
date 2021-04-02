@@ -1,2 +1,3 @@
 # javascript-apps
-Javascript applications
+
+Javascript applications.
