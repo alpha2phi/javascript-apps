@@ -75,7 +75,7 @@ export function CountryRenderer(props) {
 
 export function SubcountryRenderer(props) {
 	var country = props.data.country;
-	var subcountries = [""];
+	var subcountries = [];
 	if (country) {
 		subcountries = LOOKUP[country];
 	}
@@ -102,9 +102,10 @@ export function SubcountryRenderer(props) {
 
 export function CityRenderer(props)  {
 	var subcountry = props.data.subcountry;
-	var cities = [""];
+	var cities = [];
 	if (subcountry) {
 		cities = LOOKUP[subcountry];
+		if (!cities) cities = [];
 	}
 
 	const onChangeCity = (e) => {
