@@ -1,5 +1,5 @@
 import './App.css';
-import DynamicGrid from './DynamicGrid.js';
+import DynamicGrid from './components/DynamicGrid.js';
 
 function App() {
 

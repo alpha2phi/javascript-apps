@@ -4,24 +4,51 @@ import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 import { AgGridReact } from 'ag-grid-react';
 import faker from "faker";
+import { CountryRenderer, SubcountryRenderer, CityRenderer } from "./LookupCity";
 
 export default function DynamicGrid() {
 	const columnDefs = [{
 		field: "row_id",
 		headerName: "#",
-		checkboxSelection: function(params) { return true; },
+		checkboxSelection: function(params) {
+			if (params.data.changed) {
+				return true;
+			}
+			return false;
+		},
 		width: 50,
 		headerCheckboxSelection: true,
 		pinned: 'left'
 	},
-	{ field: "name", headerName: "Name", filter: true, sortable: true, resizable: true, floatingFilter: true },
-	{ field: "email", headerName: "Name", filter: true, sortable: true, resizable: true, floatingFilter: true },
+	{ field: "name", headerName: "Name", filter: true, sortable: true, resizable: true, floatingFilter: true, pinned: 'left' },
+	{ field: "email", headerName: "Email", filter: true, sortable: true, resizable: true, floatingFilter: true },
+	{
+		field: "country",
+		headerName: "Country",
+		resizable: true,
+		cellRenderer: "CountryRenderer",
+	},
+	{
+		field: "subcountry",
+		headerName: "Subcountry",
+		resizable: true,
+		cellRenderer: "SubcountryRenderer",
+	},
+	{
+		field: "city",
+		headerName: "City",
+		resizable: true,
+		cellRenderer: "CityRenderer",
+	},
 	];
 
 	const [data, setData] = useState([]);
 	const [gridApi, setGridApi] = useState(null);
-	const cities = require('./data/cities.json');
-	console.log(cities[0]);
+	const frameworkComponents = {
+		CountryRenderer: CountryRenderer,
+		SubcountryRenderer: SubcountryRenderer,
+		CityRenderer: CityRenderer,
+	};
 
 	useEffect(() => {
 		async function loadData() {
@@ -30,9 +57,13 @@ export default function DynamicGrid() {
 				var person = {};
 				person.name = faker.name.findName();
 				person.email = faker.internet.email();
+				person.country = "";
+				person.subcountry = "";
+				person.city = "";
 				persons.push(person);
 			}
 			setData(persons);
+
 		}
 		loadData();
 	}, []);
@@ -60,7 +91,8 @@ export default function DynamicGrid() {
 				</select>
 			</div>
 			<div className="ag-theme-alpine" style={{
-				height: 600, marginLeft: 20, marginRight: 20, marginTop:10 }}>
+				height: 600, marginLeft: 20, marginRight: 20, marginTop: 10
+			}}>
 				<AgGridReact
 					onGridReady={onGridReady}
 					rowData={data}
@@ -74,6 +106,7 @@ export default function DynamicGrid() {
 					rowSelection={'multiple'}
 					sizeColumnsToFit={true}
 					enableCellTextSelection={true}
+					frameworkComponents={frameworkComponents}
 					isRowSelectable={
 						function(rowNode) { return false; }}
 				/>
