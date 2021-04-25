@@ -34,14 +34,14 @@ export default function DynamicGrid() {
 		headerName: "Subcountry",
 		resizable: true,
 		cellRenderer: "SubcountryRenderer",
-		width: 350
+		width: 300
 	},
 	{
 		field: "city",
 		headerName: "City",
 		resizable: true,
 		cellRenderer: "CityRenderer",
-		width: 350
+		width: 300
 	},
 	];
 
@@ -73,6 +73,7 @@ export default function DynamicGrid() {
 
 	function onGridReady(params) {
 		setGridApi(params.api);
+		params.api.sizeColumnsToFit();
 	}
 
 	const onPageSizeChanged = () => {
