@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/alpha2phi/javascript-apps/react-pwa-app/static/css/main.3845de35.chunk.css",
-    "main.js": "/alpha2phi/javascript-apps/react-pwa-app/static/js/main.32337d59.chunk.js",
-    "main.js.map": "/alpha2phi/javascript-apps/react-pwa-app/static/js/main.32337d59.chunk.js.map",
-    "runtime-main.js": "/alpha2phi/javascript-apps/react-pwa-app/static/js/runtime-main.56fed71b.js",
-    "runtime-main.js.map": "/alpha2phi/javascript-apps/react-pwa-app/static/js/runtime-main.56fed71b.js.map",
-    "static/css/2.1ad56b46.chunk.css": "/alpha2phi/javascript-apps/react-pwa-app/static/css/2.1ad56b46.chunk.css",
-    "static/js/2.a30c2cf8.chunk.js": "/alpha2phi/javascript-apps/react-pwa-app/static/js/2.a30c2cf8.chunk.js",
-    "static/js/2.a30c2cf8.chunk.js.map": "/alpha2phi/javascript-apps/react-pwa-app/static/js/2.a30c2cf8.chunk.js.map",
-    "static/js/3.650835ad.chunk.js": "/alpha2phi/javascript-apps/react-pwa-app/static/js/3.650835ad.chunk.js",
-    "static/js/3.650835ad.chunk.js.map": "/alpha2phi/javascript-apps/react-pwa-app/static/js/3.650835ad.chunk.js.map",
-    "index.html": "/alpha2phi/javascript-apps/react-pwa-app/index.html",
-    "service-worker.js": "/alpha2phi/javascript-apps/react-pwa-app/service-worker.js",
-    "service-worker.js.map": "/alpha2phi/javascript-apps/react-pwa-app/service-worker.js.map",
-    "static/css/2.1ad56b46.chunk.css.map": "/alpha2phi/javascript-apps/react-pwa-app/static/css/2.1ad56b46.chunk.css.map",
-    "static/css/main.3845de35.chunk.css.map": "/alpha2phi/javascript-apps/react-pwa-app/static/css/main.3845de35.chunk.css.map",
-    "static/js/2.a30c2cf8.chunk.js.LICENSE.txt": "/alpha2phi/javascript-apps/react-pwa-app/static/js/2.a30c2cf8.chunk.js.LICENSE.txt"
+    "main.css": "/javascript-apps/static/css/main.3845de35.chunk.css",
+    "main.js": "/javascript-apps/static/js/main.f0b046fa.chunk.js",
+    "main.js.map": "/javascript-apps/static/js/main.f0b046fa.chunk.js.map",
+    "runtime-main.js": "/javascript-apps/static/js/runtime-main.ff54f2d9.js",
+    "runtime-main.js.map": "/javascript-apps/static/js/runtime-main.ff54f2d9.js.map",
+    "static/css/2.1ad56b46.chunk.css": "/javascript-apps/static/css/2.1ad56b46.chunk.css",
+    "static/js/2.a30c2cf8.chunk.js": "/javascript-apps/static/js/2.a30c2cf8.chunk.js",
+    "static/js/2.a30c2cf8.chunk.js.map": "/javascript-apps/static/js/2.a30c2cf8.chunk.js.map",
+    "static/js/3.650835ad.chunk.js": "/javascript-apps/static/js/3.650835ad.chunk.js",
+    "static/js/3.650835ad.chunk.js.map": "/javascript-apps/static/js/3.650835ad.chunk.js.map",
+    "index.html": "/javascript-apps/index.html",
+    "service-worker.js": "/javascript-apps/service-worker.js",
+    "service-worker.js.map": "/javascript-apps/service-worker.js.map",
+    "static/css/2.1ad56b46.chunk.css.map": "/javascript-apps/static/css/2.1ad56b46.chunk.css.map",
+    "static/css/main.3845de35.chunk.css.map": "/javascript-apps/static/css/main.3845de35.chunk.css.map",
+    "static/js/2.a30c2cf8.chunk.js.LICENSE.txt": "/javascript-apps/static/js/2.a30c2cf8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.56fed71b.js",
+    "static/js/runtime-main.ff54f2d9.js",
     "static/css/2.1ad56b46.chunk.css",
     "static/js/2.a30c2cf8.chunk.js",
     "static/css/main.3845de35.chunk.css",
-    "static/js/main.32337d59.chunk.js"
+    "static/js/main.f0b046fa.chunk.js"
   ]
 }
